@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Result Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Result Calculator</h1>
+    <div class="input-section">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" placeholder="Enter your full name">
+
+      <label for="english">English:</label>
+      <input type="number" id="english" placeholder="Marks out of 100">
+
+      <label for="urdu">Urdu:</label>
+      <input type="number" id="urdu" placeholder="Marks out of 100">
+
+      <label for="math-bio">Math/Biology:</label>
+      <input type="number" id="math-bio" placeholder="Marks out of 100">
+
+      <label for="chemistry">Chemistry:</label>
+      <input type="number" id="chemistry" placeholder="Marks out of 100">
+
+      <label for="physics">Physics:</label>
+      <input type="number" id="physics" placeholder="Marks out of 100">
+
+      <label for="isl-pst">Isl/PST:</label>
+      <input type="number" id="isl-pst" placeholder="Marks out of 100">
+
+      <label for="total">Total Marks:</label>
+      <input type="number" id="total" placeholder="Total marks for all subjects">
+
+      <button onclick="calculateResult()">Calculate</button>
+    </div>
+
+    <div id="report-card" class="hidden">
+      <h2>Report Card</h2>
+      <p><strong>Name:</strong> <span id="student-name"></span></p>
+      <ul id="marks-list"></ul>
+      <p><strong>Total Obtained Marks:</strong> <span id="total-obtained"></span></p>
+      <p><strong>Percentage:</strong> <span id="percentage"></span>%</p>
+      <p><strong>Grade:</strong> <span id="grade"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
